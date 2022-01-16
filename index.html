@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bbisss</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="static/js/jquery.csv.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="static/js/csv_to_html_table.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    </head>
+    <body>
+        <div id="table-container"></div>
+        <script>
+            CsvToHtmlTable.init({
+                csv_path: 'https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vQyeUdrBAKJ4gIeE8uoUduX2bb5xTiXMD7hgG-KxtRSz7XwdeXdxesiMZEL5Dx8AlchpZuKlUXOWih2/pub?output=csv', 
+                element: 'table-container', 
+                allow_download: false,
+                csv_options: {separator: ',', delimiter: '"'},
+                datatables_options: {
+                    "paging": false, 
+                    "order": [[4,'asc']]
+                }
+            });
+        </script>
+    </body>
+</html>
