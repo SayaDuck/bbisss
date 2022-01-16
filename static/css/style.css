@@ -1,0 +1,46 @@
+/* variables & default font size */
+:root {
+    --background: rgb(39, 38, 37);
+    --text: #ddd7ce;
+    --orange: #f1c87c;
+    font-size: 16px;
+}
+
+/* styling yep */
+body {
+    font-family: 'Roboto Mono', 'Noto Mono', monospace;
+    color: var(--text);
+    background-color: var(--background);
+    margin-left: calc(9% - 9px);
+    margin-right: calc(9% - 9px);
+    max-width: 90%;
+}
+
+h1 {
+    margin-top: 29px;
+}
+
+a, a:link, a:visited  {
+    color: var(--orange);
+}
+
+a:hover {
+    filter: brightness(150%);
+}
+
+label {
+    color: var(--text);
+}
+
+.table-dark {
+    filter: brightness(110%);
+    --bs-table-bg: #161615;
+    --bs-table-striped-bg: var(--background);
+    --bs-table-striped-color: var(--text);
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: var(--text);
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: var(--text);
+    color: var(--text);
+    border-color: #373b3e
+}
