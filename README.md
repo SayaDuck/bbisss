@@ -1,2 +1,2 @@
 # bbisss
-best buy in store stock searcher interface, data from dogix (dogix#9999)'s sheet
+Best Buy In-Store Stock Searcher, data from dogix (dogix#9999)'s sheet for now.
