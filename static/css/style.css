@@ -46,3 +46,7 @@ label {
 #table-container-table_info {
     color: var(--text);
 }
+
+input[type=search] {
+    color: var(--text);
+}
